@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.1.1">
+  <diagram name="Page-1" id="4_CoZOexYnoy-0XPzfUv">
+    <mxGraphModel dx="1281" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ent_user" parent="1" style="whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;b&gt;USER&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="120" x="120" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_plan" parent="1" style="whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;b&gt;SUBSCRIPTION_PLAN&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="150" x="540" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_artist" parent="1" style="whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;b&gt;ARTIST&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="120" x="1020" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_album" parent="1" style="whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;b&gt;ALBUM&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="120" x="1020" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_track" parent="1" style="whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;b&gt;TRACK&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="120" x="1020" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_playlist" parent="1" style="whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;b&gt;PLAYLIST&lt;/b&gt;" vertex="1">
+          <mxGeometry height="50" width="120" x="120" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="att_userid" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;u&gt;UserID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="20" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_userid" edge="1" parent="1" source="att_userid" style="endArrow=none;endFill=0;html=1;" target="ent_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_email" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Email" vertex="1">
+          <mxGeometry height="40" width="100" x="15" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_email" edge="1" parent="1" source="att_email" style="endArrow=none;endFill=0;html=1;" target="ent_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_pwd" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="PasswordHash" vertex="1">
+          <mxGeometry height="40" width="100" x="10" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_pwd" edge="1" parent="1" source="att_pwd" style="endArrow=none;endFill=0;html=1;" target="ent_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_dispname" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="DisplayName" vertex="1">
+          <mxGeometry height="40" width="110" x="110" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_dispname" edge="1" parent="1" source="att_dispname" style="endArrow=none;endFill=0;html=1;" target="ent_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_country" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Country" vertex="1">
+          <mxGeometry height="40" width="90" x="185" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_country" edge="1" parent="1" source="att_country" style="endArrow=none;endFill=0;html=1;" target="ent_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_birth" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="BirthDate" vertex="1">
+          <mxGeometry height="40" width="100" x="220" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_birth" edge="1" parent="1" source="att_birth" style="endArrow=none;endFill=0;html=1;" target="ent_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_gender" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Gender" vertex="1">
+          <mxGeometry height="40" width="90" x="70" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_gender" edge="1" parent="1" source="att_gender" style="endArrow=none;endFill=0;html=1;" target="ent_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_created_user" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="CreatedAt" vertex="1">
+          <mxGeometry height="40" width="100" x="185" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_created" edge="1" parent="1" source="att_created_user" style="endArrow=none;endFill=0;html=1;" target="ent_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_ispremium" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="IsPremium" vertex="1">
+          <mxGeometry height="40" width="90" x="5" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_ispremium" edge="1" parent="1" source="att_ispremium" style="endArrow=none;endFill=0;html=1;" target="ent_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_status" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Status" vertex="1">
+          <mxGeometry height="40" width="80" x="15" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_status" edge="1" parent="1" source="att_status" style="endArrow=none;endFill=0;html=1;" target="ent_user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_planid" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;u&gt;PlanID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="550" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="e_plan_planid" edge="1" parent="1" source="att_planid" style="endArrow=none;endFill=0;html=1;" target="ent_plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_planname" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="PlanName" vertex="1">
+          <mxGeometry height="40" width="100" x="660" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="e_plan_planname" edge="1" parent="1" source="att_planname" style="endArrow=none;endFill=0;html=1;" target="ent_plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_price" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="MonthlyPrice" vertex="1">
+          <mxGeometry height="40" width="110" x="700" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_plan_price" edge="1" parent="1" source="att_price" style="endArrow=none;endFill=0;html=1;" target="ent_plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_maxdev" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="MaxDevices" vertex="1">
+          <mxGeometry height="40" width="100" x="710" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="e_plan_maxdev" edge="1" parent="1" source="att_maxdev" style="endArrow=none;endFill=0;html=1;" target="ent_plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_maxoff" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;fontSize=10" value="MaxOfflineDownloads" vertex="1">
+          <mxGeometry height="40" width="120" x="580" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="e_plan_maxoff" edge="1" parent="1" source="att_maxoff" style="endArrow=none;endFill=0;html=1;" target="ent_plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_student" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="IsStudentPlan" vertex="1">
+          <mxGeometry height="40" width="110" x="720" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e_plan_student" edge="1" parent="1" source="att_student" style="endArrow=none;endFill=0;html=1;" target="ent_plan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_artistid" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;u&gt;ArtistID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="1030" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="e_artist_artistid" edge="1" parent="1" source="att_artistid" style="endArrow=none;endFill=0;html=1;" target="ent_artist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_artistname" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Name" vertex="1">
+          <mxGeometry height="40" width="90" x="1140" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_artist_name" edge="1" parent="1" source="att_artistname" style="endArrow=none;endFill=0;html=1;" target="ent_artist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_artistcountry" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Country" vertex="1">
+          <mxGeometry height="40" width="90" x="1150" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e_artist_country" edge="1" parent="1" source="att_artistcountry" style="endArrow=none;endFill=0;html=1;" target="ent_artist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_debut" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="DebutYear" vertex="1">
+          <mxGeometry height="40" width="100" x="1140" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="e_artist_debut" edge="1" parent="1" source="att_debut" style="endArrow=none;endFill=0;html=1;" target="ent_artist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_monthly" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;fontSize=10" value="MonthlyListeners" vertex="1">
+          <mxGeometry height="40" width="120" x="890" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e_artist_monthly" edge="1" parent="1" source="att_monthly" style="endArrow=none;endFill=0;html=1;" target="ent_artist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_followers" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="FollowersCount" vertex="1">
+          <mxGeometry height="40" width="120" x="890" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e_artist_followers" edge="1" parent="1" source="att_followers" style="endArrow=none;endFill=0;html=1;" target="ent_artist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_albumid" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;u&gt;AlbumID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="910" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="e_album_albumid" edge="1" parent="1" source="att_albumid" style="endArrow=none;endFill=0;html=1;" target="ent_album">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_albumtitle" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Title" vertex="1">
+          <mxGeometry height="40" width="90" x="1130" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="e_album_title" edge="1" parent="1" source="att_albumtitle" style="endArrow=none;endFill=0;html=1;" target="ent_album">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_releasedate" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="ReleaseDate" vertex="1">
+          <mxGeometry height="40" width="110" x="1150" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="e_album_release" edge="1" parent="1" source="att_releasedate" style="endArrow=none;endFill=0;html=1;" target="ent_album">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_albumtype" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="AlbumType" vertex="1">
+          <mxGeometry height="40" width="100" x="930" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="e_album_type" edge="1" parent="1" source="att_albumtype" style="endArrow=none;endFill=0;html=1;" target="ent_album">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_totaltracks" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="TotalTracks" vertex="1">
+          <mxGeometry height="40" width="110" x="900" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="e_album_total" edge="1" parent="1" source="att_totaltracks" style="endArrow=none;endFill=0;html=1;" target="ent_album">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_label" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Label" vertex="1">
+          <mxGeometry height="40" width="80" x="1120" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="e_album_label" edge="1" parent="1" source="att_label" style="endArrow=none;endFill=0;html=1;" target="ent_album">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_trackid" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;u&gt;TrackID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="1130" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_trackid" edge="1" parent="1" source="att_trackid" style="endArrow=none;endFill=0;html=1;" target="ent_track">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_tracktitle" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Title" vertex="1">
+          <mxGeometry height="40" width="90" x="1140" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_title" edge="1" parent="1" source="att_tracktitle" style="endArrow=none;endFill=0;html=1;" target="ent_track">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_duration" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="DurationSec" vertex="1">
+          <mxGeometry height="40" width="110" x="1200" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_duration" edge="1" parent="1" source="att_duration" style="endArrow=none;endFill=0;html=1;" target="ent_track">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_explicit" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;fontSize=10" value="ExplicitContent" vertex="1">
+          <mxGeometry height="40" width="120" x="910" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_explicit" edge="1" parent="1" source="att_explicit" style="endArrow=none;endFill=0;html=1;" target="ent_track">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_popularity" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;fontSize=10" value="PopularityScore" vertex="1">
+          <mxGeometry height="40" width="120" x="1150" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_popularity" edge="1" parent="1" source="att_popularity" style="endArrow=none;endFill=0;html=1;" target="ent_track">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_disc" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="DiscNumber" vertex="1">
+          <mxGeometry height="40" width="100" x="1240" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_disc" edge="1" parent="1" source="att_disc" style="endArrow=none;endFill=0;html=1;" target="ent_track">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_tracknum" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="TrackNumber" vertex="1">
+          <mxGeometry height="40" width="110" x="1190" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_tracknum" edge="1" parent="1" source="att_tracknum" style="endArrow=none;endFill=0;html=1;" target="ent_track">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_isrc" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="ISRCCode" vertex="1">
+          <mxGeometry height="40" width="100" x="1050" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_isrc" edge="1" parent="1" source="att_isrc" style="endArrow=none;endFill=0;html=1;" target="ent_track">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_language" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Language" vertex="1">
+          <mxGeometry height="40" width="100" x="960" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_language" edge="1" parent="1" source="att_language" style="endArrow=none;endFill=0;html=1;" target="ent_track">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_playlistid" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="&lt;u&gt;PlaylistID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="110" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e_playlist_playlistid" edge="1" parent="1" source="att_playlistid" style="endArrow=none;endFill=0;html=1;" target="ent_playlist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_playlistname" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Name" vertex="1">
+          <mxGeometry height="40" width="90" x="10" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="e_playlist_name" edge="1" parent="1" source="att_playlistname" style="endArrow=none;endFill=0;html=1;" target="ent_playlist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_description" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="Description" vertex="1">
+          <mxGeometry height="40" width="110" x="270" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="e_playlist_desc" edge="1" parent="1" source="att_description" style="endArrow=none;endFill=0;html=1;" target="ent_playlist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_ispublic" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="IsPublic" vertex="1">
+          <mxGeometry height="40" width="90" x="77.5" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="e_playlist_public" edge="1" parent="1" source="att_ispublic" style="endArrow=none;endFill=0;html=1;" target="ent_playlist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_playlistcreated" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="CreatedAt" vertex="1">
+          <mxGeometry height="40" width="100" x="250" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="e_playlist_created" edge="1" parent="1" source="att_playlistcreated" style="endArrow=none;endFill=0;html=1;" target="ent_playlist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_playlistupdated" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;" value="UpdatedAt" vertex="1">
+          <mxGeometry height="40" width="100" x="20" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="e_playlist_updated" edge="1" parent="1" source="att_playlistupdated" style="endArrow=none;endFill=0;html=1;" target="ent_playlist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="att_playlistfollowers" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;rounded=1;fontSize=10" value="FollowersCount" vertex="1">
+          <mxGeometry height="40" width="120" x="170" y="787" as="geometry" />
+        </mxCell>
+        <mxCell id="e_playlist_followers" edge="1" parent="1" source="att_playlistfollowers" style="endArrow=none;endFill=0;html=1;" target="ent_playlist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_subscription" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="SUBSCRIPTION" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_subscription" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-11" style="endArrow=none;endFill=0;html=1;" target="rel_subscription">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_plan_subscription" edge="1" parent="1" source="card_user_sub_right" style="endArrow=none;endFill=0;html=1;" target="rel_subscription">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_creates" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="CREATES" vertex="1">
+          <mxGeometry height="70" width="120" x="1020" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="e_artist_creates" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-13" style="endArrow=none;endFill=0;html=1;" target="rel_creates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_album_creates" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-16" style="endArrow=none;endFill=0;html=1;" target="rel_creates">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_contains" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="CONTAINS" vertex="1">
+          <mxGeometry height="70" width="120" x="1020" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="e_album_contains" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-27" style="endArrow=none;endFill=0;html=1;" target="rel_contains">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_contains" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-29" style="endArrow=none;endFill=0;html=1;" target="rel_contains">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_owns" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="OWNS" vertex="1">
+          <mxGeometry height="70" width="100" x="130" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_owns" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-18" style="endArrow=none;endFill=0;html=1;" target="rel_owns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_playlist_owns" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-20" style="endArrow=none;endFill=0;html=1;" target="rel_owns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_includes" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="INCLUDES" vertex="1">
+          <mxGeometry height="120" width="180" x="500" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="e_playlist_includes" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-6" style="endArrow=none;endFill=0;html=1;" target="rel_includes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_track_includes" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-8" style="endArrow=none;endFill=0;html=1;" target="rel_includes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_listens" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="LISTENS" vertex="1">
+          <mxGeometry height="70" width="105" x="525" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="e_user_listens" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-23" style="endArrow=none;endFill=0;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" target="rel_listens">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="199.8854961832061" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_track_listens" edge="1" parent="1" source="WIZxRKpT1feQJIN9kPYY-25" style="endArrow=none;endFill=0;html=1;" target="rel_listens">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-4" edge="1" parent="1" source="ent_plan" style="endArrow=none;endFill=0;html=1;" target="card_user_sub_right" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="546" y="130" as="sourcePoint" />
+            <mxPoint x="420" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="card_user_sub_right" parent="1" style="text;html=1;strokeColor=none;fillColor=none;" value="N" vertex="1">
+          <mxGeometry height="15" width="15" x="505" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-5" edge="1" parent="1" source="ent_user" style="endArrow=none;endFill=0;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="204" as="sourcePoint" />
+            <mxPoint x="240" y="193.57142857142856" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-7" edge="1" parent="1" source="ent_playlist" style="endArrow=none;endFill=0;html=1;" target="WIZxRKpT1feQJIN9kPYY-6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="644" as="sourcePoint" />
+            <mxPoint x="502" y="641" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="M" vertex="1">
+          <mxGeometry height="30" width="20" x="250" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-9" edge="1" parent="1" source="ent_track" style="endArrow=none;endFill=0;html=1;" target="WIZxRKpT1feQJIN9kPYY-8" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1020" y="644" as="sourcePoint" />
+            <mxPoint x="679" y="641" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="N" vertex="1">
+          <mxGeometry height="30" width="20" x="980" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-12" edge="1" parent="1" source="ent_user" style="endArrow=none;endFill=0;html=1;" target="WIZxRKpT1feQJIN9kPYY-11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="162" as="sourcePoint" />
+            <mxPoint x="356" y="118" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="N" vertex="1">
+          <mxGeometry height="10" width="25" x="245" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-14" edge="1" parent="1" source="ent_artist" style="endArrow=none;endFill=0;html=1;" target="WIZxRKpT1feQJIN9kPYY-13" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="130" as="sourcePoint" />
+            <mxPoint x="1080" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="20" width="20" x="1070" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-17" edge="1" parent="1" source="ent_album" style="endArrow=none;endFill=0;html=1;" target="WIZxRKpT1feQJIN9kPYY-16" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="320" as="sourcePoint" />
+            <mxPoint x="1080" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="N" vertex="1">
+          <mxGeometry height="15" width="20" x="1070" y="292.5" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-19" edge="1" parent="1" source="ent_user" style="endArrow=none;endFill=0;html=1;" target="WIZxRKpT1feQJIN9kPYY-18" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="210" as="sourcePoint" />
+            <mxPoint x="180" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="20" width="35" x="160" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-21" edge="1" parent="1" source="ent_playlist" style="endArrow=none;endFill=0;html=1;" target="WIZxRKpT1feQJIN9kPYY-20" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="620" as="sourcePoint" />
+            <mxPoint x="180" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="N" vertex="1">
+          <mxGeometry height="25" width="25" x="167.5" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-24" edge="1" parent="1" source="ent_user" style="endArrow=none;endFill=0;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" target="WIZxRKpT1feQJIN9kPYY-23" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="198" as="sourcePoint" />
+            <mxPoint x="547" y="341" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="M" vertex="1">
+          <mxGeometry height="20" width="25" x="257.5" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-26" edge="1" parent="1" source="ent_track" style="endArrow=none;endFill=0;html=1;" target="WIZxRKpT1feQJIN9kPYY-25" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1037" y="620" as="sourcePoint" />
+            <mxPoint x="606" y="371" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="N" vertex="1">
+          <mxGeometry height="15" width="30" x="980" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-28" edge="1" parent="1" source="ent_album" style="endArrow=none;endFill=0;html=1;" target="WIZxRKpT1feQJIN9kPYY-27" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="370" as="sourcePoint" />
+            <mxPoint x="1080" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="20" width="20" x="1070" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-30" edge="1" parent="1" source="ent_track" style="endArrow=none;endFill=0;html=1;" target="WIZxRKpT1feQJIN9kPYY-29" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="620" as="sourcePoint" />
+            <mxPoint x="1080" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIZxRKpT1feQJIN9kPYY-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="N" vertex="1">
+          <mxGeometry height="20" width="20" x="1070" y="580" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
