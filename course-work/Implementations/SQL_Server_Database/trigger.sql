@@ -38,3 +38,10 @@ SELECT *
 FROM User_Subscription
 WHERE UserId = 1;
 GO
+
+SELECT 
+    UserId,
+    COUNT(*) AS TotalSubscriptions,
+    SUM(CASE WHEN IsActive = 1 THEN 1 ELSE 0 END) AS ActiveSubscriptions
+FROM User_Subscription
+GROUP BY UserId;
